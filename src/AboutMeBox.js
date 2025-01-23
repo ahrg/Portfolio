@@ -16,7 +16,7 @@ const AboutMeBox = () => {
                     </div>
                     <div className="AboutMe-Contact-Container">
                         <h1>Phone number</h1>
-                        <h1>+47 46152208</h1>
+                        <h1>+47 41652208</h1>
                     </div>
                     <div className="AboutMe-Contact-Container">
                         <h1>Github</h1>
