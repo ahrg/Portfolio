@@ -1,0 +1,108 @@
+
+.AboutMeBox-Container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0; /* Align to the left edge of the viewport */
+    display: flex;
+    justify-content: left;
+    
+
+}
+.AboutMeBox-Size {
+    width: 20%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AboutMeBox-Color {
+    background-color: #463f4b;
+}
+
+.Profile-Picture {
+    margin-top: 30px;
+    width: 20vh;
+    height: 20vh;
+
+}
+.Profile-Picture img {
+    width: 100%;        /* Makes the image fill the div width */
+    height: auto;       /* Maintains the aspect ratio */
+  }
+
+.Profile-Text {
+    color: white;
+    text-align: center;
+}
+
+.Web-Dev {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    margin-bottom: 3vh;
+}
+
+.Profile-Color {
+    background: #D28DE3; /* Fallback for old browsers */
+    background: -moz-linear-gradient(to top, #4D4C55 0%, #6F5768 100%); /* Firefox 3.6+ */
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#4D4C55), color-stop(100%,#6F5768)); /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(to top, #4D4C55 0%, #6F5768 100%); /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(to top, #4D4C55 0%, #6F5768 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(to top, #4D4C55 0%, #6F5768 100%); /* IE10+ */
+    background: linear-gradient(to top, #4D4C55 0%, #6F5768 100%); /* W3C, standard */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5), /* Main shadow */
+    10px 5px 50px rgba(0, 0, 0, 0.1);   /* Secondary subtle shadow */
+    border-radius: 50px; /* Optional for rounded corners */
+}
+
+
+.AboutMe-Contact {
+    color: white;
+    text-align: left;
+}
+
+.AboutMe-Contact-Container {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    width: 30vh;
+    height: 10vh;
+}
+
+.AboutMe-Contact-Container h1 {
+    font-size: 20px;
+    color: white;
+    margin: 2px;
+    
+}
+
+
+.Programming-Languages {
+    width: 50vh;
+    height: 5vh;
+    background-size: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.Programming-Languages img {
+    max-height:100%; 
+    max-width:100%;
+}
+
+
+.Programming-Languages-Text {
+    color: white;
+    font-size: 20px;
+}
+
+.Programming-Text-Container {
+    display: flex;
+    justify-content: center;
+    width: 50vh;
+    height: 5vh;
+    gap: 0px;
+}
