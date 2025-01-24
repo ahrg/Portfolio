@@ -9,18 +9,27 @@ const AboutMeBox = () => {
                     <img src="/profile-picture.png" alt="profile-picture"></img>
                      </div>
                     <h1 className="Profile-Text"> Christoffer Schem</h1>
-
-                    <div className="AboutMe-Contact-Container">
-                        <h1 className="AboutMe-Contact">Email</h1>
-                        <h1>Christofferv3@gmail.com</h1>
+                        <div className="AboutMe-Contact-Container-Parent">
+                        <img src="./email.png" alt="Email"></img>
+                        <div className="AboutMe-Contact-Container">
+                            <h1>Email</h1>
+                            <h1>Christofferv3@gmail.com</h1>
+                        </div>
                     </div>
-                    <div className="AboutMe-Contact-Container">
-                        <h1>Phone number</h1>
-                        <h1>+47 41652208</h1>
+                    <div className="AboutMe-Contact-Container-Parent">
+                        <img src="./phone.png" alt="Phone"></img>
+                        <div className="AboutMe-Contact-Container">
+                            <h1>Phone number</h1>
+                            <h1>+47 41652208</h1>
+                        </div>
                     </div>
-                    <div className="AboutMe-Contact-Container">
-                        <h1>Github</h1>
-                        <h1>Click here</h1>
+                    <div className="AboutMe-Contact-Container-Parent">
+                        <img src="./github.png" alt="Github"></img>
+                        
+                        <div className="AboutMe-Contact-Container">
+                            <h1>Github</h1>
+                            <h1>Click here</h1>
+                        </div>
                     </div>
                     <div className="Programming-Languages-Container">
                         <div className="Profile-Html">

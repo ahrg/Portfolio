@@ -1,17 +1,18 @@
 
 .AboutMeBox-Container {
     position: absolute;
-    height: 100%;
     width: 100%;
+    height: 100%;
     left: 0; /* Align to the left edge of the viewport */
     display: flex;
     justify-content: left;
+    
     
 
 }
 .AboutMeBox-Size {
     width: 20%;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +23,7 @@
 }
 
 .Profile-Picture {
-    margin-top: 30px;
+    margin-top: 1vw;
     width: 25vh;
     height: 25vh;
 
@@ -35,15 +36,16 @@
 .Profile-Text {
     color: white;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 3vh;
+
 }
 
 .Web-Dev {
     color: white;
     text-align: center;
-    padding: 10px;
-    margin: 0px;
+    padding: 0.5vh;
+    margin: 2vh;
+    font-size: 2.5vh;
 }
 
 .Profile-Color {
@@ -56,27 +58,27 @@
     background: linear-gradient(to top, #4D4C55 0%, #6F5768 100%); /* W3C, standard */
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5), /* Main shadow */
     10px 5px 50px rgba(0, 0, 0, 0.1);   /* Secondary subtle shadow */
-    border-radius: 50px; /* Optional for rounded corners */
+    border-radius: 7vh; /* Optional for rounded corners */
 }
 
 
-.AboutMe-Contact {
-    color: white;
-    text-align: left;
-}
+
 
 .AboutMe-Contact-Container {
-    display: flex;
-    align-items: left;
-    flex-direction: column;
-    width: 30vh;
-    height: 10vh;
-}
+        flex: 1; /* Take up the remaining width */
+        display: flex; /* Flexbox layout */
+        flex-direction: column; /* Stack items vertically */
+        margin-left: 1.5vh;
 
+}
+.AboutMe-Contact-Container > h1:first-child {
+    color: #D3D3D3;
+}
 .AboutMe-Contact-Container h1 {
-    font-size: 15px;
+    font-size: 1.5vh;
     color: white;
-    margin: 2px;
+    margin: 0.5vh;
+    text-align: left;
     
 }
 
@@ -86,8 +88,9 @@
     height: 5vh;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 50px;
+    gap: 3vh;
+    margin-bottom: 3vh;
+    margin-top: auto;
 }
 .Programming-Languages-Container img {
     max-height:80%; 
@@ -99,7 +102,7 @@
 .Profile-Html, .Profile-Css, .Profile-Javascript, .Profile-React {
     color: white;
     text-align: center;
-    font-size: 8px;
+    font-size: 1vh;
 }
 
 .Red {
@@ -117,5 +120,24 @@
 
 .React {
     color: #3bb9eb;
+}
+
+.AboutMe-Contact-Container-Parent img {
+    height: 3vh;        /* Set a proportional height */
+    width: auto;        /* Maintain aspect ratio */
+    max-width: 100%;    /* Prevent overflow */
+    object-fit: contain; /* Ensure images fit properly */
+    margin-left: 3vh;
+}
+
+
+
+.AboutMe-Contact-Container-Parent {
+    display: flex;          /* Enable Flexbox */
+    align-items: center;  
+    height: auto;
+    width: 100%;
+    gap: 1vh;
+    margin-top: 2vh;
 }
 
