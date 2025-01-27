@@ -12,10 +12,12 @@
 }
 .AboutMeBox-Size {
     width: 20%;
-    height: 100%;
+    height: calc(100vh - var(--navbar-height));
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Add this to center content vertically */
+    gap: 2vh; /* Add some consistent spacing between elements */
 }
 
 .AboutMeBox-Color {
@@ -23,10 +25,9 @@
 }
 
 .Profile-Picture {
-    margin-top: 1vw;
+    margin-top: 0; /* Remove top margin since we're using flex centering */
     width: 25vh;
     height: 25vh;
-
 }
 .Profile-Picture img {
     width: 100%;        /* Makes the image fill the div width */
@@ -37,6 +38,7 @@
     color: white;
     text-align: center;
     margin-top: 3vh;
+    font-size: 3vh;
 
 }
 
@@ -46,6 +48,7 @@
     padding: 0.5vh;
     margin: 2vh;
     font-size: 2.5vh;
+    margin-bottom: 0; /* Remove bottom margin since we're using flex centering */
 }
 
 .Profile-Color {
@@ -65,21 +68,20 @@
 
 
 .AboutMe-Contact-Container {
-        flex: 1; /* Take up the remaining width */
-        display: flex; /* Flexbox layout */
-        flex-direction: column; /* Stack items vertically */
-        margin-left: 1.5vh;
-
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5vh;
 }
 .AboutMe-Contact-Container > h1:first-child {
     color: #D3D3D3;
 }
+
 .AboutMe-Contact-Container h1 {
     font-size: 1.5vh;
     color: white;
     margin: 0.5vh;
-    text-align: left;
-    
+    text-align: left; /* Keep the left alignment */
 }
 
 
