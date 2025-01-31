@@ -28,6 +28,7 @@
     margin-top: 0; /* Remove top margin since we're using flex centering */
     width: 25vh;
     height: 25vh;
+    margin-top: 3vh;
 }
 .Profile-Picture img {
     width: 100%;        /* Makes the image fill the div width */
@@ -38,8 +39,8 @@
     color: white;
     text-align: center;
     margin-top: 3vh;
-    font-size: 3vh;
-
+    font-size: 4vh;
+    font-weight: bold;
 }
 
 .Web-Dev {
@@ -48,10 +49,10 @@
     padding: 0.5vh;
     margin: 2vh;
     font-size: 2.5vh;
-    margin-bottom: 0; /* Remove bottom margin since we're using flex centering */
+    margin-bottom: 6vh; /* Remove bottom margin since we're using flex centering */
 }
 
-.Profile-Color {
+.Picture-Color {
     background: #D28DE3; /* Fallback for old browsers */
     background: -moz-linear-gradient(to top, #4D4C55 0%, #6F5768 100%); /* Firefox 3.6+ */
     background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#4D4C55), color-stop(100%,#6F5768)); /* Chrome, Safari 4+ */
@@ -143,3 +144,6 @@
     margin-top: 2vh;
 }
 
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}

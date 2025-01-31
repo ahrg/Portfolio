@@ -1,0 +1,28 @@
+.stor_tittel {
+    font-size: 8vh;
+    color: white;
+
+}
+
+.AboutMePicture {
+    width: 60vh;
+    height: 50vh;
+    border-radius: 25vh;
+}
+
+.AboutMeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - var(--navbar-height));
+    width: 100vh;
+}
+
+
+.paragraf-container {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+}

@@ -4,8 +4,9 @@ import './AboutMeBox.css'
 const AboutMeBox = () => {
     return (
         <div className="AboutMeBox-Container">
+            
             <div className="AboutMeBox-Size color" >
-                <div className="Profile-Picture Profile-Color">
+                <div className="Profile-Picture Picture-Color">
                     <img src="/profile-picture.png" alt="profile-picture"></img>
                      </div>
                     <h1 className="Profile-Text"> Christoffer Schem</h1>
@@ -49,7 +50,7 @@ const AboutMeBox = () => {
                         <h1 className="React">React</h1>
                         </div>
                     </div>
-                    <h1 className="Web-Dev Profile-Color">Web Developer</h1>
+                    <h1 className="Web-Dev Picture-Color">Web Developer</h1>
 
                  </div>
              </div>
