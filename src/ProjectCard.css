@@ -10,9 +10,7 @@
   height: 80vh;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-}
+
 
 .content {
   padding: 25px;
@@ -24,6 +22,7 @@
   font-size: 24px;
   color: #ffffff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  text-align: center;
 }
 
 .content p {
@@ -31,17 +30,29 @@
   color: #e1e1e1;
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
 }
 
 .image-container {
   width: 100%;
   height: 35vh;
   margin-top: auto;
+  display:flex;
+  justify-content: center;
+  margin-bottom: 2vh;
 }
 
-.Picture-Color {
-  background: linear-gradient(to top, #4D4C55 0%, #6F5768 100%);
+.image-container img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
 }
+
+.image-container img:hover {
+  transform: scale(1.2);
+}
+
 
 .button-container {
   padding: 20px;

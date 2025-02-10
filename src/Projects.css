@@ -1,0 +1,11 @@
+:root {
+    --navbar-height: 40px;  /* Set exact height */
+  }
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    padding: 2vw;
+    justify-content: center;
+ }
