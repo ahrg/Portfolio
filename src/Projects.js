@@ -4,14 +4,22 @@ import './Projects.css';
 
 const Projects = ({ ProjectCardInfo }) => {
     const cardComponent = ProjectCardInfo.map((user, i) => {
-        return <ProjectCard key={i} id={ProjectCardInfo[i].id} title={ProjectCardInfo[i].title} description={ProjectCardInfo[i].description} imageUrl={ProjectCardInfo[i].imageUrl} />
-    })
+        return <ProjectCard 
+            key={i} 
+            id={ProjectCardInfo[i].id} 
+            title={ProjectCardInfo[i].title} 
+            description={ProjectCardInfo[i].description} 
+            imageUrl={ProjectCardInfo[i].imageUrl} 
+            liveUrl={ProjectCardInfo[i].liveUrl} 
+            viewCode={ProjectCardInfo[i].viewCode} 
+        />
+    });
 
     return (
-        <div className="projects" style={{overflowY: 'scroll', border: '1px solid black', height: '800px'}}>
+        <div className="projects">
             {cardComponent}
         </div>
     );
-    }
+}
 
-    export default Projects;
+export default Projects;

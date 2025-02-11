@@ -1,13 +1,16 @@
 .background {
+  position: fixed;
+  top: var(--navbar-height);
+  left: 0;
+  width: 100%;
+  height: calc(100vh - var(--navbar-height));
   background-color: black;
-  height: 100vh;
-  margin-top: var(--navbar-height);
   display: flex;
 }
 
 .background-container {
   width: 77%;
   margin-left: 23%;
-  height: calc(100vh - var(--navbar-height));
+  height: 100%;  /* Changed from calc() since parent already has correct height */
   overflow: hidden;
 }

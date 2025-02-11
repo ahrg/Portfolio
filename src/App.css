@@ -1,7 +1,14 @@
-#root, body, html {
-  height: 100%;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;  /* Prevents scrolling */
 }
 
 h1 {
@@ -15,3 +22,20 @@ h1 {
 
 /* In src/index.css or App.css */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+.view {
+  position: relative;
+  height: 100vh;  /* Changed from min-height to exact height */
+  width: 100%;
+  overflow: hidden;
+}
+
+.content-container {
+  position: absolute;
+  top: var(--navbar-height);
+  left: 23%;
+  width: 77%;
+  height: calc(100vh - var(--navbar-height));  /* Changed from min-height to exact height */
+  z-index: 1;
+  overflow-y: auto;  /* Allow scrolling within content if needed */
+}

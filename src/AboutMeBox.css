@@ -82,10 +82,10 @@
 }
 
 .AboutMe-Contact-Container h1 {
-    font-size: 1.5vh;
     color: white;
     margin: 0.5vh;
     text-align: left; /* Keep the left alignment */
+    font-size: clamp(12px, 1.5vh, 16px);
 }
 
 

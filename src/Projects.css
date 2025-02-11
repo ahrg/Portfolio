@@ -1,11 +1,15 @@
 :root {
-    --navbar-height: 40px;  /* Set exact height */
-  }
-  
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2vw;
-    padding: 2vw;
-    justify-content: center;
- }
+  --navbar-height: 40px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  padding: 2vw;
+  justify-content: center;
+  height: calc(100vh - var(--navbar-height));
+  overflow-y: auto;
+  /* Remove the inline style border and fixed height */
+}
+

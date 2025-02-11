@@ -2,7 +2,7 @@ import React from 'react';
 import './ProjectCard.css';
 
 
-const ProjectCard = ({ title, description, imageUrl }) => {
+const ProjectCard = ({ title, description, imageUrl, liveUrl, viewCode }) => {
   return (
     <div className="project-card">
       <div className="content">
@@ -13,8 +13,8 @@ const ProjectCard = ({ title, description, imageUrl }) => {
         <img src={imageUrl} alt="Project preview"/>
       </div>
       <div className="button-container">
-        <button className="btn primary">Live Demo</button>
-        <button className="btn secondary">View Code</button>
+        <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="btn primary">Live Demo</a>
+        <a href={viewCode} target="_blank" rel="noopener noreferrer" className="btn secondary">View Code</a>
       </div>
     </div>
   );
