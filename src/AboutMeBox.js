@@ -2,6 +2,10 @@ import React from 'react';
 import './AboutMeBox.css'
 
 const AboutMeBox = () => {
+    const openNewTab = (url) => {
+        window.open(url, '_blank', 'noopener,noreferrer')
+    }
+    
     return (
         <div className="AboutMeBox-Container">
             
@@ -27,7 +31,7 @@ const AboutMeBox = () => {
                     <div className="AboutMe-Contact-Container-Parent">
                         <img src="./github.png" alt="Github"></img>
                         
-                        <div className="AboutMe-Contact-Container">
+                        <div className="AboutMe-Contact-Container" onClick={() => openNewTab('https://github.com/ahrg')} >
                             <h1>Github</h1>
                             <h1>Click here</h1>
                         </div>

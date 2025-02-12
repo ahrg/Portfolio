@@ -145,6 +145,7 @@
     width: 100%;
     gap: 1vh;
     margin-top: 2vh;
+    cursor: pointer;
 }
 
 h1 {
