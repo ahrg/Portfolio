@@ -9,11 +9,11 @@ export const ProjectCardInfo = [
     },
     {
         id: 2,
-        title: 'heswhyewygh',
+        title: 'Portfolio',
         description: 'test test test test test test test test test test test test test  test test test test test test test test test  test test test test test test test test test  ',
-        imageUrl: 'https://robohash.org/2',
+        imageUrl: '/Portfolio.png',
         liveUrl: 'https://ahrg.github.io/training/',
-        viewCode: 'https://github.com/ahrg/training'
+        viewCode: 'https://github.com/ahrg/Portfolio'
     },
     {
         id: 3,

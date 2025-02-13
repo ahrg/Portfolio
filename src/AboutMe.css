@@ -1,95 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --card-gradient-start: #2a1f62;
+    --card-gradient-end: #1f4d89;
+    --text-primary: #ffffff;
+    --text-secondary: #e1e1e1;
+    --accent-color: #64ffdb;
+    --bg-gradient-start: #1a103c;
+    --bg-gradient-end: #1a2f4d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
+    background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    min-height: 100vh;
+    color: var(--text-primary);
 }
 
 .container {
     width: 100%;
-    padding: 30px;
-    max-width: 800px;
+    padding: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .header {
     text-align: center;
-    margin-bottom: 40px;
-    margin-top: 30px;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
 }
 
 .header h1 {
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    font-weight: 600;
-    letter-spacing: -0.05em;
-}
-
-.header p {
-    color: #9ca3af;
-    font-size: 1.2rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    background: linear-gradient(to right, #fff, #ccc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .cards-grid {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.5rem;
+    padding: 1rem;
 }
 
 .card {
-    background: linear-gradient(to top, #292930 0%, #463f4b 100%);
-    padding: 25px;
-    border-radius: 20px;
-    color: white;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(145deg, var(--card-gradient-start), var(--card-gradient-end));
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(41, 31, 98, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.03), transparent);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border: 4px solid rgba(173, 216, 255, 0.6);
+}
+
+.card:hover::before {
+    opacity: 1;
 }
 
 .card h2 {
-    margin-bottom: 15px;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    position: relative;
+    z-index: 2;
 }
 
 .card p {
-    color: #e1e1e1;
-    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
+    position: relative;
+    z-index: 2;
 }
 
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 0.75rem;
+    position: relative;
+    z-index: 2;
 }
 
 .skill {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 8px 20px;
-    border-radius: 25px;
-    font-size: 1rem;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(100, 255, 219, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    color: var(--accent-color);
+    border: 1px solid rgba(100, 255, 219, 0.2);
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .skill:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(100, 255, 219, 0.15);
     transform: translateY(-2px);
-}
-
-.card, .skill {
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(100, 255, 219, 0.15);
+    border-color: rgba(100, 255, 219, 0.3);
 }
 
 @media (max-width: 768px) {
     .container {
-        padding: 20px;
+        padding: 1rem;
     }
 
     .header h1 {
-        font-size: 2.2rem;
+        font-size: 2.25rem;
+    }
+
+    .card {
+        padding: 1.5rem;
     }
 }

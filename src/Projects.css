@@ -10,6 +10,7 @@
   justify-content: center;
   height: calc(100vh - var(--navbar-height));
   overflow-y: auto;
+  width: 100%;
   /* Remove the inline style border and fixed height */
 }
 

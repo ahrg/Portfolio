@@ -1,16 +1,25 @@
 .project-card {
-  width: 45vh;
-  background: linear-gradient(to top, #540d1f 0%, #8b1538 100%);
+  width: 47vh;
+  background: linear-gradient(145deg, var(--card-gradient-start), var(--card-gradient-end));
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(19, 20, 20, 0.4);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   height: 80vh;
   margin-top: 3vh;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border: 4px solid rgba(173, 216, 255, 0.6);
+}
+
+
 
 
 
@@ -42,17 +51,16 @@
   display:flex;
   justify-content: center;
   margin-bottom: 2vh;
+  object-fit: cover;
 }
 
 .image-container img {
-  width: 90%;
+  width: 100%;
   height: 100%;
-  object-fit: cover;
   border-radius: 30px;
-}
-
-.image-container img:hover {
-  transform: scale(1.2);
+  object-position: center;
+  image-rendering: -webkit-optimize-contrast; /* For bedre skarphet */
+  image-rendering: crisp-edges; /* Moderne nettlesere */
 }
 
 

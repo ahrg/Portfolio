@@ -14,14 +14,14 @@ const AboutMeBox = () => {
                     <img src="/profile-picture.png" alt="profile-picture"></img>
                      </div>
                     <h1 className="Profile-Text"> Christoffer Schem</h1>
-                        <div className="AboutMe-Contact-Container-Parent">
+                        <div className="AboutMe-Contact-Container-Parent" onClick={() =>  navigator.clipboard.writeText('Christofferv3@gmail.com')}>
                         <img src="./email.png" alt="Email"></img>
                         <div className="AboutMe-Contact-Container">
                             <h1>Email</h1>
                             <h1>Christofferv3@gmail.com</h1>
                         </div>
                     </div>
-                    <div className="AboutMe-Contact-Container-Parent">
+                    <div className="AboutMe-Contact-Container-Parent" onClick={() =>  navigator.clipboard.writeText('41652208')}>
                         <img src="./phone.png" alt="Phone"></img>
                         <div className="AboutMe-Contact-Container">
                             <h1>Phone number</h1>

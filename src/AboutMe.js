@@ -21,6 +21,7 @@ const AboutMe = () => {
                         <span className="skill">JavaScript</span>
                         <span className="skill">CSS</span>
                         <span className="skill">HTML</span>
+                        <span className="skill">Python</span>
                         <span className="skill">Git</span>
                     </div>
                 </div>
