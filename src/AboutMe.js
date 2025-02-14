@@ -4,14 +4,19 @@ import './AboutMe.css';
 const AboutMe = () => {
     return (
         <div className="container">
-            <div className="header">
-                <h1>Kort om meg</h1>
-            </div>
+
 
             <div className="cards-grid">
                 <div className="card">
-                    <h2>Hvem er jeg</h2>
-                    <p>En dedikert Frontend-utvikler som drives av ønsket om å bygge oversiktlige, effective og responsive nettsider. For tiden fordyper jeg meg i moderne webteknologier og søker aktivt nye muligheter som kan utfordre og videreutvikle mine tekniske ferdigheter.</p>
+                    <h2>Kort om meg</h2>
+                    <div className="skills-grid">
+                        <span className="about-item">Frontend-utvikler</span>
+                        <span className="about-item">Problemløser</span>
+                        <span className="about-item">Kreativ koder</span>
+                        <span className="about-item">Selvlært utvikler</span>
+                        <span className="about-item">Tech-utforsker</span>
+                        <span className="about-item">Alltid lærende</span>
+                    </div>
                 </div>
 
                 <div className="card">
@@ -28,12 +33,12 @@ const AboutMe = () => {
 
                 <div className="card">
                     <h2>Mitt fokus nå</h2>
-                    <p>Bygger personlige prosjekter for å forbedre portfolioen min og styrke min forståelse av React og moderne webteknologiske praksiser. Aktivt på jakt etter en rolle der jeg kan bidra til meningsfulle prosjekter og fortsette å vokse som utvikler.</p>
+                    <p>Jeg bygger personlige prosjekter for å forbedre portfolioen min og styrke min forståelse av React. Aktivt på jakt etter en rolle der jeg kan bidra til meningsfulle prosjekter og fortsette å vokse som utvikler.</p>
                 </div>
 
                 <div className="card">
                     <h2>Liv utenfor koding</h2>
-                    <p>Utenfor kodeverden så spiller jeg med venner eller trener calisthenic som gir meg avkobling og fysisk utfordring. Calisthenic er en form for styrketrening med kroppsvekt</p>
+                    <p>Utenfor kodeverden spiller jeg med venner eller trener en form for styrketrening, som kalles calisthenic.</p>
                 </div>
             </div>
         </div>

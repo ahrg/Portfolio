@@ -53,6 +53,7 @@ body {
     flex-direction: column;
     gap: 1.5rem;
     padding: 1rem;
+    margin-top: 35px;
 }
 
 .card {
@@ -65,6 +66,24 @@ body {
     position: relative;
     overflow: hidden;
     backdrop-filter: blur(12px);
+}
+
+.about-item {
+    background: linear-gradient(45deg, rgba(100, 255, 219, 0.3), rgba(80, 200, 180, 0.3)) 1;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    border: 2px solid rgba(100, 255, 219, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.about-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .card::before {
@@ -115,14 +134,14 @@ body {
 }
 
 .skill {
-    background: rgba(100, 255, 219, 0.1);
+    background: linear-gradient(45deg, rgba(100, 255, 219, 0.3), rgba(80, 200, 180, 0.3)) 1;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     font-size: 0.875rem;
-    color: var(--accent-color);
-    border: 1px solid rgba(100, 255, 219, 0.2);
+    border: 2px solid rgba(100, 255, 219, 0.3);
     transition: all 0.3s ease;
     cursor: pointer;
+    
 }
 
 .skill:hover {
