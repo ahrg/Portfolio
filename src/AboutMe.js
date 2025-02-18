@@ -6,7 +6,7 @@ const AboutMe = () => {
         <div className="container">
 
 
-            <div className="cards-grid">
+            <div className="cards-container">
                 <div className="card">
                     <h2>Kort om meg</h2>
                     <div className="skills-grid">

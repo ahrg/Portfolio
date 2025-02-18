@@ -13,8 +13,8 @@ const ProjectCard = ({ title, description, imageUrl, liveUrl, viewCode }) => {
         <img src={imageUrl} alt="Project preview"/>
       </div>
       <div className="button-container">
-        <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="btn primary">Live Demo</a>
-        <a href={viewCode} target="_blank" rel="noopener noreferrer" className="btn secondary">View Code</a>
+        <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="btn primary">Se Demo</a>
+        <a href={viewCode} target="_blank" rel="noopener noreferrer" className="btn secondary">Se Kode</a>
       </div>
     </div>
   );

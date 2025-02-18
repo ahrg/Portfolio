@@ -27,14 +27,13 @@ body {
 .container {
     width: 100%;
     padding: 2rem;
-    max-width: 1200px;
+
     margin: 0 auto;
 }
 
 .header {
     text-align: center;
-    margin-bottom: 3rem;
-    padding-top: 2rem;
+
 }
 
 .header h1 {
@@ -48,7 +47,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.cards-grid {
+.cards-container {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
