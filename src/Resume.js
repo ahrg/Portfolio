@@ -35,7 +35,7 @@ const Resume = () => {
                         </li>
                         <li>📜 <strong>Complete Web Developer</strong> – Zero To Mastery <em>(Pågår – 66% fullført, 2025)</em>
                             <br/>🔹 HTML, CSS, JavaScript, React, Node.js,
-                            <br/>🔹 Arbeider med responsivt design og ytelsesoptimalisering
+                            <br/>🔹 Arbeider med responsivt design
                         </li>
                     </ul>
                     </div>
