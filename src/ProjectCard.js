@@ -6,8 +6,8 @@ const ProjectCard = ({ title, description, imageUrl, liveUrl, viewCode }) => {
   return (
     <div className="project-card">
       <div className="content">
-        <h2>{title || "Project Title"}</h2>
-        <p>{description || "A sleek web application for managing daily tasks and scheduling, built with React and Node.js"}</p>
+        <h2>{title}</h2>
+        <p>{description}</p>
       </div>
       <div className="image-container">
         <img src={imageUrl} alt="Project preview"/>
