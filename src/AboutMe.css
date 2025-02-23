@@ -10,11 +10,6 @@
     --bg-gradient-end: #1a2f4d;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: 'Inter', sans-serif;
@@ -27,13 +22,14 @@ body {
 .container {
     width: 100%;
     padding: 2rem;
-
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .header {
     text-align: center;
-
+    margin-bottom: 3rem;
+    padding-top: 2rem;
 }
 
 .header h1 {
@@ -47,12 +43,11 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.cards-container {
+.cards-grid {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     padding: 1rem;
-    margin-top: 35px;
 }
 
 .card {
@@ -65,6 +60,7 @@ body {
     position: relative;
     overflow: hidden;
     backdrop-filter: blur(12px);
+    margin-top: 3vh;
 }
 
 .about-item {
@@ -140,7 +136,6 @@ body {
     border: 2px solid rgba(100, 255, 219, 0.3);
     transition: all 0.3s ease;
     cursor: pointer;
-    
 }
 
 .skill:hover {
@@ -150,16 +145,41 @@ body {
     border-color: rgba(100, 255, 219, 0.3);
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 1rem;
+@media screen and (max-width: 768px) {
+    .card {
+      /* Fjern alle fancy effekter midlertidig */
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      
+      /* Gjør teksten skarpere */
+      filter: none;
+      -webkit-filter: none;
+    }
+  
+    .card h2, 
+    .card p {
+      /* Sett faste pixel-størrelser */
+      font-size: 16px; /* eller 14px */
+      /* Fjern gradient og effekter */
+      background: none;
+      -webkit-background-clip: unset;
+      background-clip: unset;
+      -webkit-text-fill-color: var(--text-primary);
     }
 
-    .header h1 {
-        font-size: 2.25rem;
+    li {
+        font-size: 0.7rem; /* 14px */
+        line-height: 1.5;
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .card {
-        padding: 1.5rem;
+        padding: 1.5vh;
+    }
+    .card h2 {
+        text-align: center;
     }
 }
+

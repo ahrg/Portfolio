@@ -7,9 +7,10 @@ const AboutMeBox = () => {
     }
     
     return (
+        <div className="container2"> 
         <div className="AboutMeBox-Container">
             
-            <div className="AboutMeBox-Size color" >
+            <div className="AboutMeBox-Size color mobile-content-centered" >
                 <div className="Profile-Picture Picture-Color">
                     <img src="/profile-picture.png" alt="profile-picture"></img>
                      </div>
@@ -24,7 +25,7 @@ const AboutMeBox = () => {
                     <div className="AboutMe-Contact-Container-Parent" onClick={() =>  navigator.clipboard.writeText('41652208')}>
                         <img src="./phone.png" alt="Phone"></img>
                         <div className="AboutMe-Contact-Container">
-                            <h1>Phone number</h1>
+                            <h1>Tlf nummer</h1>
                             <h1>+47 41652208</h1>
                         </div>
                     </div>
@@ -33,7 +34,7 @@ const AboutMeBox = () => {
                         
                         <div className="AboutMe-Contact-Container" onClick={() => openNewTab('https://github.com/ahrg')} >
                             <h1>Github</h1>
-                            <h1>Click here</h1>
+                            <h1>Klikk her</h1>
                         </div>
                     </div>
                     <div className="Programming-Languages-Container">
@@ -58,6 +59,7 @@ const AboutMeBox = () => {
 
                  </div>
              </div>
+        </div>
     )
 }
 

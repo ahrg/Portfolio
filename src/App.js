@@ -6,25 +6,26 @@ import { ProjectCardInfo } from './ProjectCardInfo'
 import Projects from './Projects'
 import Resume from './Resume';
 import Background from './Background';
+import AboutMeBox from './AboutMeBox';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className ="view">
-        {/* Include NavBar here */}
+      <div className="view">
         <NavBar />
         <Background />
-        {/* Define routes */}
+        
+        {/* Legg AboutMeBox i en spesiell container */}
+        <div className="mobile-aboutmebox-container">
+          <AboutMeBox />
+        </div>
+
         <div className="content-container">
           <Routes>
-            {/* Set WorkoutProgram as the default route */}
-            <Route path="/" element={<AboutMe/>} /> {/* Main Page */}
-            <Route path="/AboutMe" element={<AboutMe />} />
-            {/* Route for WorkoutProgram */}
-            <Route path="/Resume" element={<Resume />} />
-
-            <Route path="/Projects" element={<Projects ProjectCardInfo={ProjectCardInfo} />} />
-
+            <Route path="/" element={<AboutMe/>} />
+            <Route path="/OmMeg" element={<AboutMe />} />
+            <Route path="/CV" element={<Resume />} />
+            <Route path="/Prosjekter" element={<Projects ProjectCardInfo={ProjectCardInfo} />} />
           </Routes>
         </div>
       </div>

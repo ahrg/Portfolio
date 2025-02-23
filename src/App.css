@@ -8,7 +8,8 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100vh;
-  overflow: hidden;  /* Prevents scrolling */
+  overflow-x: hidden;  /* Fjern horizontal scrolling */
+  overflow-y: auto;    /* Tillat vertikal scrolling */
 }
 
 h1 {
@@ -20,14 +21,13 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-/* In src/index.css or App.css */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 .view {
   position: relative;
-  height: 100vh;  /* Changed from min-height to exact height */
+  min-height: 100vh;  /* Endre til min-height */
   width: 100%;
-  overflow: hidden;
+  overflow-y: auto;  /* Tillat scrolling */
 }
 
 .content-container {
@@ -35,7 +35,14 @@ h1 {
   top: var(--navbar-height);
   left: 23%;
   width: 77%;
-  height: calc(100vh - var(--navbar-height));  /* Changed from min-height to exact height */
+  min-height: calc(100vh - var(--navbar-height));
   z-index: 1;
-  overflow-y: auto;  /* Allow scrolling within content if needed */
+  overflow-y: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    all: unset;
+  }
 }

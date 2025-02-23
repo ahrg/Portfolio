@@ -5,9 +5,9 @@ import './NavBar.css'
 const NavBar = () => {
     return (
         <div className ="NavBar-container color">
-            <Link to="/AboutMe" className="NavButton">Om meg</Link>
-            <Link to="/Resume" className="NavButton">CV</Link>
-            <Link to="/Projects" className="NavButton">Prosjekter</Link>
+            <Link to="/OmMeg" className="NavButton">Om meg</Link>
+            <Link to="/CV" className="NavButton">CV</Link>
+            <Link to="/Prosjekter" className="NavButton">Prosjekter</Link>
 
         </div>
     )
