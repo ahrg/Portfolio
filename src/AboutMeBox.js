@@ -11,8 +11,8 @@ const AboutMeBox = () => {
         <div className="AboutMeBox-Container">
             
             <div className="AboutMeBox-Size color mobile-content-centered" >
-                <div className="Profile-Picture Picture-Color">
-                    <img src="/profile-picture.png" alt="profile-picture"></img>
+                <div className="Profile-Picture ">
+                    <img src="/profile-picture.jpg" alt="profile-picture"></img>
                      </div>
                     <h1 className="Profile-Text"> Christoffer Schem</h1>
                         <div className="AboutMe-Contact-Container-Parent" onClick={() =>  navigator.clipboard.writeText('Christofferv3@gmail.com')}>
