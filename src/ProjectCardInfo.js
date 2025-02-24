@@ -12,7 +12,7 @@ export const ProjectCardInfo = [
         title: 'Portfolio',
         description: 'En responsiv portfolio-nettside bygget fra bunnen av med React og CSS. Siden viser mine prosjekter, ferdigheter og erfaringer.',
         imageUrl: '/Portfolio.png',
-        liveUrl: 'https://ahrg.github.io/training/',
+        liveUrl: 'https://Christoffer-Portfolio.no',
         viewCode: 'https://github.com/ahrg/Portfolio'
     },
   ];

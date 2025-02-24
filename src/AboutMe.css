@@ -168,7 +168,7 @@ body {
     }
 
     li {
-        font-size: 0.7rem; /* 14px */
+        font-size: 1rem; /* 14px */
         line-height: 1.5;
         white-space: normal;
         word-wrap: break-word;
