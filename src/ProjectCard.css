@@ -58,8 +58,8 @@
   height: 100%;
   border-radius: 30px;
   object-position: center;
-  image-rendering: -webkit-optimize-contrast; /* For bedre skarphet */
-  image-rendering: crisp-edges; /* Moderne nettlesere */
+  image-rendering: -webkit-optimize-contrast; 
+  image-rendering: crisp-edges; 
 }
 
 
@@ -108,11 +108,11 @@
 
 @media screen and (max-width: 768px) {
   .project-card:first-child {
-    margin-top: 20vh; /* Only the first card gets extra margin to clear navbar */
+    margin-top: 20vh; 
   }
 
   .project-card:last-child {
-    margin-bottom: 20vh; /* Only the last card gets extra margin to clear footer */
+    margin-bottom: 20vh; 
   }
 
 .project-card {

@@ -8,8 +8,8 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100vh;
-  overflow-x: hidden;  /* Fjern horizontal scrolling */
-  overflow-y: auto;    /* Tillat vertikal scrolling */
+  overflow-x: hidden;  
+  overflow-y: auto;   
 }
 
 h1 {
@@ -25,9 +25,9 @@ h1 {
 
 .view {
   position: relative;
-  min-height: 100vh;  /* Endre til min-height */
+  min-height: 100vh;  
   width: 100%;
-  overflow-y: auto;  /* Tillat scrolling */
+  overflow-y: auto;  
 }
 
 .content-container {

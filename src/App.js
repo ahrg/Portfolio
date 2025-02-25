@@ -15,7 +15,7 @@ function App() {
         <NavBar />
         <Background />
         
-        {/* Legg AboutMeBox i en spesiell container */}
+ 
         <div className="mobile-aboutmebox-container">
           <AboutMeBox />
         </div>
